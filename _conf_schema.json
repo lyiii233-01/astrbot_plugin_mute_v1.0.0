@@ -1,0 +1,49 @@
+{
+  "default_seconds": {
+    "description": "默认闭嘴时长（秒）",
+    "type": "int",
+    "default": 60,
+    "hint": "只发 /mute 或者只说「别说话」而没有指定秒数时，用这个时长。"
+  },
+  "max_seconds": {
+    "description": "单次闭嘴上限（秒）",
+    "type": "int",
+    "default": 3600,
+    "hint": "超过这个数值会被截到上限，防手滑关我一星期。"
+  },
+  "mute_keywords": {
+    "description": "触发闭嘴的关键词",
+    "type": "list",
+    "default": ["别说话", "闭嘴", "安静点", "别吵"],
+    "hint": "说这些话也会让我闭嘴，用的是默认时长。"
+  },
+  "unmute_keywords": {
+    "description": "提前解除闭嘴的关键词",
+    "type": "list",
+    "default": ["可以说话了", "说话吧", "解除闭嘴", "别闭嘴了"],
+    "hint": "闭嘴期间说到这些词就立刻解除。"
+  },
+  "keyword_only_when_addressed": {
+    "description": "群聊里只在被@/喊到时才认关键词",
+    "type": "bool",
+    "default": true,
+    "hint": "建议开着，关掉的话群里谁随口说一句也能让我闭嘴。"
+  },
+  "ack_on_keyword": {
+    "description": "关键词触发时回一句确认",
+    "type": "bool",
+    "default": true,
+    "hint": "指令触发的确认始终会回。"
+  },
+  "ack_mute_text": {
+    "description": "闭嘴确认文案",
+    "type": "string",
+    "default": "好，闭嘴 {seconds} 秒咪~",
+    "hint": "{seconds} 会替换成实际秒数。"
+  },
+  "ack_unmute_text": {
+    "description": "解除闭嘴文案",
+    "type": "string",
+    "default": "行，可以说话了咪~"
+  }
+}

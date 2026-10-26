@@ -1,0 +1,6 @@
+name: astrbot_plugin_mute
+display_name: 闭嘴插件
+desc: 让机器人闭嘴一段时间，/mute 10 闭嘴十秒，/unmute 或说「可以说话了」提前解除。
+version: v1.0.0
+author: 咪咪
+repo: https://github.com/lyiii233-01/astrbot_plugin_mute_v1.0.0
